@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>FILE STORAGE</title>
+</head>
+
+<body>
+    <h1>FILE STORAGE</h1>
+    <div id="CenterBlock">
+    
+        <form action="/uploader" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" class="file_input" name="file"/>
+                <input type="submit"/>
+            </div>
+
+        </form>
+        
+        <br>
+        <br>
+        <br>
+        {% for file in list %}
+            <li><a href="{{ url_for('download', filename=file) }}">{{ file }}</a></li>
+        {% endfor %}
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

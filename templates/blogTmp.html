@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/main.css">
+    <title>Home page</title>
+</head>
+
+<body>
+    <a href="../../blogs">Back to blogs</a>
+    <h1>{{header}}</h1>
+    <div id="CenterBlock">
+        {%for i in range(g)%}
+            {%if content[i][0] == "|"%}
+                <p>{{content[i][1:]}}</p>
+
+            {%elif content[i][0] == "#"%}
+                <h2>{{content[i][1:]}}</h2>
+            {%elif content[i][0] == "*"%}
+                <br>
+            {%elif content[i][0] == "'"%}
+                <audio controls>
+                    <source src="../../static/files/{{content[i][1:]}}" type="audio/mpeg">No Support?
+                </audio>
+            {%endif%}
+        {%endfor%}
+    <p id="date">{{date}}</p>
+    </div>
+</body>
+
+</html>

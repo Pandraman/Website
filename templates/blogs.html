@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>BLOGS:</title>
+</head>
+
+<body>
+    <h1>BLOGS</h1>
+    <a href="/"><h2 id="Centered" id="MainMenu">Main Menu</h2></a>
+    <p>{{greetings}}</p>
+    <div id="centered">
+
+        {%for blg in lst%}
+        
+        <li id="liste"><a href="../blogs/{{blg}}/{{rev}}"><p>{{blg}}</p></a></li>
+        {%endfor%}
+        
+    </div>
+</body>
+
+</html>

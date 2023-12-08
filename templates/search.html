@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Home page</title>
+</head>
+
+<body>
+    <h1>SEARCH BAR TEST</h1>
+    <div id="CenterBlock">
+        <a href="../blogs" style="color:#aaa;">to the blogs</a>
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nesciunt. Quo minima dolores praesentium animi neque accusantium, dolorum, ullam consequatur quidem possimus architecto pariatur repellendus. Pariatur dignissimos vel omnis porro.
+        </p>
+    </div>
+
+    <form action="{{ url_for('/') }}" method="post">
+        <input type="text" name='SearchBar'>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>
