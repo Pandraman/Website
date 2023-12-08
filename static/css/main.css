@@ -1,0 +1,42 @@
+* {
+    background: #222222;
+    color: #fff;
+    font-family:sans-serif;
+    
+}
+li {
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+    
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    text-align: center;
+    font-size: 600%;
+}
+#CenterBlock, #CenterBlock * {
+    background: #282828;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 2em;
+
+}
+#date {
+    color: #aaa;
+}
+
+#Centered {
+    text-align: center;
+}
+#liste {
+    width: auto;
+    margin-left: 35%;
+}
+#MainMenu {
+    margin-bottom: 5%;
+}
+
