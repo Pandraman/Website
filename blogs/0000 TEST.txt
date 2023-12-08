@@ -1,0 +1,17 @@
+Blog test
+08.12.2023
+|Using the first Character of a line, you can define, what type the line is.
+| Using "|", you can make a text field
+# Using "#", you can make a header
+| Using "*", you can create an empty line.
+*
+*
+*
+|Using "'", you can add an audio player.
+
+|To create an audio, you use
+|"'Test.mp3"
+|This will look for "static/files/Test.mp3"
+|If you write "'Test/Test.mp3",
+|The software will look at "static/files/Test/Test.mp3"
+| Have Fun using the system
